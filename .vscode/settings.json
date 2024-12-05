@@ -15,6 +15,7 @@
         "poder",
         "registra",
         "Sexo",
-        "verlo"
+        "verlo",
+        "viewsets"
     ]
 }
