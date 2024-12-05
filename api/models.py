@@ -10,11 +10,12 @@ class programmer(models.Model):
     phone = models.CharField(max_length=10, null=True, default=None)
     is_active = models.BooleanField(default=True)
 
-class student(models.Model):
+class student(models.Model):#se crean la clase estudiante
     Nombre = models.CharField(max_length=20)
     Apellido = models.CharField(max_length=20)
     Sexo = models.CharField(max_length=1)
-    Num_ficha = models.DecimalField (max_digits=7, decimal_places=0)
-    Formacion = models.booleanField(default=True)
-    Fecha_ingreso = models.DateField(auto_now_add=True)
+    Num_ficha = models.IntegerField(default=None)
+    
+    Formacion = models.BooleanField(default=True)
+    Fecha_ingreso = models.DateField(default=None)
     is_active = models.BooleanField(default=True)
